@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HI</title>
+</head>
+<body>
+<h1>Caculator</h1>
+<input id="k1" type="text">
+<input id="k2" type="text"><br/>
+<input onclick="Addition()"type="button" value="+">
+<input onclick="Subtration()"type="button" value="-">
+<input onclick="Multiplication()"type="button" value="*">
+<input onclick="Division()"type="button" value="/">
+<p id="skull">Result Division: </p>
+<script>
+    function Addition() {
+        let s1 = parseInt(document.getElementById('k1').value);
+        let s2 = parseInt(document.getElementById('k2').value);
+        let KQ = s1 + s2;
+        document.getElementById("skull").innerHTML= "Result Division " + KQ;
+    }
+    function Subtration() {
+        let s1 = parseInt(document.getElementById('k1').value);
+        let s2 = parseInt(document.getElementById('k2').value);
+        let KQ = s1 - s2;
+        document.getElementById("skull").innerHTML= "Result Division " + KQ;
+    }
+    function Multiplication() {
+        let s1 = parseInt(document.getElementById('k1').value);
+        let s2 = parseInt(document.getElementById('k2').value);
+        let KQ = s1 * s2;
+        document.getElementById("skull").innerHTML= "Result Division " + KQ;
+    }
+    function Division() {
+        let s1 = parseInt(document.getElementById('k1').value);
+        let s2 = parseInt(document.getElementById('k2').value);
+        let KQ = s1 / s2;
+        document.getElementById("skull").innerHTML= "Result Division: " + KQ;
+    }
+</script>
+</body>
+</html>
